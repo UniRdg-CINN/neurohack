@@ -111,6 +111,9 @@ INTRODUCTION
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
+{% if site.carpentry == "neurohack" %}
+{% include neurohack/intro.html %}
+
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
@@ -129,6 +132,9 @@ AUDIENCE
 Explain who your audience is.  (In particular, tell readers if the
 workshop is only open to people from a particular institution.
 {% endcomment %}
+{% if site.carpentry == "neurohack" %}
+{% include neurohack/who.html %}
+
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
@@ -379,6 +385,8 @@ of code below the Schedule `<h2>` header below with
 {% endcomment %}
 
 <h2 id="schedule">Schedule</h2>
+{% if site.carpentry == "neurohack" %}
+{% include neurohack/schedule.html %}
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
@@ -420,6 +428,9 @@ please preview your site before committing, and make sure to run
 
 <p>
   To participate in a
+  {% if site.carpentry == "neurohack" %}
+  Neurohack
+
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -456,6 +467,8 @@ These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
 
+{% if site.carpentry == "neurohack" %}
+{% include neurohack/setup.html %}
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}

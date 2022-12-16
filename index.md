@@ -114,7 +114,7 @@ the pitch.
 {% if site.carpentry == "neurohack" %}
 {% include neurohack/intro.html %}
 
-{% if site.carpentry == "swc" %}
+{% elsif site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/intro.html %}
@@ -135,7 +135,7 @@ workshop is only open to people from a particular institution.
 {% if site.carpentry == "neurohack" %}
 {% include neurohack/who.html %}
 
-{% if site.carpentry == "swc" %}
+{% elsif site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/who.html %}
@@ -388,7 +388,7 @@ of code below the Schedule `<h2>` header below with
 {% if site.carpentry == "neurohack" %}
 {% include neurohack/schedule.html %}
 
-{% if site.carpentry == "swc" %}
+{% elsif site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
@@ -431,7 +431,7 @@ please preview your site before committing, and make sure to run
   {% if site.carpentry == "neurohack" %}
   Neurohack
 
-  {% if site.carpentry == "swc" %}
+  {% elsif site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
   Data Carpentry
@@ -469,7 +469,7 @@ during the workshop.
 
 {% if site.carpentry == "neurohack" %}
 {% include neurohack/setup.html %}
-{% if site.carpentry == "swc" %}
+{% elsif site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
